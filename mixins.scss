@@ -1,0 +1,8 @@
+@mixin set-icon-fill($color) {
+  .mat-icon,
+  svg {
+    color: $color;
+  }
+}
+
+// @include set-icon-fill(white);

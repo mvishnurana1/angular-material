@@ -1,0 +1,32 @@
+@use "sass:map";
+@use "../../../m3-theme.scss" as theme;
+@use "../../../mixins.scss" as mixins;
+
+:host {
+  @include mixins.set-icon-fill(#fff);
+}
+
+.sidenav-container {
+  height: 100%;
+
+  .sidenav {
+    width: 200px;
+  }
+}
+
+.active-route {
+  background-color: #0057bb;
+  color: #fff;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: theme.$blue;
+  color: theme.$white;
+}
